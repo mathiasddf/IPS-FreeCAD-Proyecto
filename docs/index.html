@@ -3,61 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staging: FreeCAD - Ingeniería y Procesos de Software</title>
+    <title>FreeCAD - Proyecto IPS 2026-A</title>
     <style>
-        :root { --primary: #003366; --secondary: #f4f4f9; --accent: #28a745; --text: #333; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--secondary); margin: 0; padding: 0; }
-        header { background: var(--primary); color: white; padding: 2.5rem 1rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-        .container { max-width: 950px; margin: 20px auto; padding: 0 20px; }
-        section { background: white; margin-bottom: 25px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { margin: 0; font-size: 2.2rem; }
-        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
-        .status-badge { display: inline-block; background: var(--accent); color: white; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-top: 10px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #e0e0e0; padding: 12px 15px; text-align: left; }
-        th { background-color: #f8f9fa; color: var(--primary); }
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background: #001a33; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; font-size: 24pt; }
+        h2 { color: #004a99; border-left: 5px solid #004a99; padding-left: 10px; margin-top: 30px; font-size: 16pt; }
+        h3 { color: #2c3e50; margin-top: 20px; font-size: 13pt; }
+        p, li { font-size: 11pt; text-align: justify; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 12px;
+            border-bottom: 2px solid #ddd;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            background-color: #e8f4fd;
+            color: #004a99;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Proyecto: Scrum y DevOps - FreeCAD</h1>
+        <p>Curso: Ingeniería y Procesos de Software (2026-A)</p>
+    </header>
 
-<header>
-    <h1>Proyecto: Scrum y DevOps - FreeCAD</h1>
-    <p>Facultad de Ingeniería de Producción y Servicios | UNSA</p>
-    <span class="status-badge">Sprint 0: En curso</span>
-</header>
+    <div class="container">
+        <h2>1. Introducción al Proyecto</h2>
+        <p>Este proyecto implementa un proceso de desarrollo de software que integra el marco de trabajo <strong>Scrum</strong> con prácticas <strong>DevOps</strong>. El producto seleccionado es <strong>FreeCAD</strong>, un modelador 3D paramétrico de código abierto bajo licencia LGPL-2.1.</p>
 
-<div class="container">
-    <section>
-        <h2>1. Descripción del Software Seleccionado</h2>
-        <p><strong>Producto:</strong> FreeCAD [cite: 91]</p>
-        <p><strong>Análisis inicial:</strong> Software de código abierto con licencia MIT que permite el modelado 3D paramétrico y cuenta con una arquitectura modular superior a las 10,000 líneas de código[cite: 8, 14, 18].</p>
-        <div class="grid">
-            <div>
-                <strong>Stack Tecnológico:</strong>
-                <ul>
-                    <li>C++ y Python (Core)</li>
-                    <li>Qt Framework (GUI)</li>
-                    <li>Docker Compose (Infraestructura DevOps) [cite: 19]</li>
-                </ul>
-            </div>
-            <div>
-                <strong>Equipo de Trabajo:</strong>
-                <ul>
-                    <li>Davila Flores Mathias Dario [cite: 93]</li>
-                    <li>Quenta Ahumada Paulo Estefano [cite: 94]</li>
-                    <li>Cornejo Hurtado Darío Rafael [cite: 95]</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <h2>2. Plan del Proyecto (Scrum + DevOps)</h2>
+        <p>El desarrollo se basa en ciclos iterativos de 15 días. El equipo está compuesto por 5 integrantes con roles rotativos.</p>
+        
+        <h3>Estructura de Sprints</h3>
+        <ul>
+            <li><strong>Sprint 0:</strong> Planificación, análisis del sistema y configuración del entorno.</li>
+            <li><strong>Sprint 1-2:</strong> Desarrollo inicial e integración CI/CD.</li>
+            <li><strong>Sprint 3-4:</strong> Mejoras, optimización y documentación final.</li>
+        </ul>
 
-    <section>
-        <h2>2. Plan de Proyecto (Scrum + DevOps)</h2>
-        <p>El desarrollo integra el marco de trabajo ágil Scrum con prácticas de automatización CI/CD[cite: 108, 120].</p>
+        <h2>3. Cronograma de Trabajo</h2>
         <table>
             <thead>
                 <tr>
@@ -69,50 +100,61 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Sprint 0</strong></td>
-                    <td>Planificación, análisis, backlog y configuración GitHub.</td>
+                    <td>Sprint 0</td>
+                    <td>Planificación, backlog inicial y configuración GitHub.</td>
                     <td>01/05</td>
                     <td>13/05</td>
                 </tr>
                 <tr>
-                    <td><strong>Sprint 1</strong></td>
-                    <td>Desarrollo inicial y configuración CI/CD.</td>
+                    <td>Sprint 1</td>
+                    <td>Desarrollo inicial + configuración CI/CD.</td>
                     <td>14/05</td>
                     <td>28/05</td>
                 </tr>
                 <tr>
-                    <td><strong>Sprint 2</strong></td>
-                    <td>Implementación de funcionalidades.</td>
+                    <td>Sprint 2</td>
+                    <td>Implementación de funcionalidades (BIM Focus).</td>
                     <td>29/05</td>
                     <td>10/06</td>
                 </tr>
                 <tr>
-                    <td><strong>Sprint 3-4</strong></td>
-                    <td>Mejoras, optimización y documentación final.</td>
+                    <td>Sprint 3</td>
+                    <td>Mejoras y optimización del código.</td>
                     <td>11/06</td>
+                    <td>25/06</td>
+                </tr>
+                <tr>
+                    <td>Sprint 4</td>
+                    <td>Documentación técnica y entrega final.</td>
+                    <td>26/06</td>
                     <td>13/07</td>
                 </tr>
             </tbody>
         </table>
-    </section>
 
-    <section style="text-align: center;">
-        <h2>3. Gestión del Product Backlog</h2>
-        <p>Utilizamos <strong>GitHub Projects</strong> para organizar el trabajo mediante un tablero Kanban con columnas: Backlog, To Do, In Progress y Done[cite: 128, 131].</p>
-        <br>
-        <a href="TU_LINK_AQUÍ" class="btn" target="_blank">Acceder a GitHub Projects</a>
-    </section>
+        <h2>4. Infraestructura de Staging y DevOps</h2>
+        <div class="highlight-box">
+            <h3>Entorno de Staging (Demo Pública)</h3>
+            <p>Este sitio sirve como nuestro entorno de Staging. Aquí se publicarán los avances funcionales de cada Sprint para revisión del docente. La actualización es automática mediante GitHub Actions cada vez que se realiza un merge a la rama principal.</p>
+        </div>
 
-    <section>
-        <h2>4. Entorno de Staging y DevOps</h2>
-        <p>Este sitio (GitHub Pages) servirá como centro de visibilidad para:</p>
-        <ul>
-            <li><strong>Demostraciones públicas:</strong> Avances funcionales de cada Sprint[cite: 147].</li>
-            <li><strong>Métricas:</strong> Burndown charts generados por GitHub Actions[cite: 26].</li>
-            <li><strong>Documentación:</strong> Informe técnico en formato IEEE[cite: 50, 148].</li>
-        </ul>
-    </section>
-</div>
+        <h3>Métricas DevOps (Burndown Chart)</h3>
+        <p>A continuación se presenta la métrica de avance del Sprint actual. Esta gráfica es generada automáticamente por <strong>GitHub Actions</strong> analizando los Issues de GitHub Projects.</p>
+        <div style="text-align:center; padding: 40px; border: 2px dashed #ccc; color: #777;">
+            [El Burndown Chart se activará automáticamente al inicio del Sprint 1]
+        </div>
 
+        <h2>5. Gestión del Trabajo</h2>
+        <p>Utilizamos <strong>GitHub Projects</strong> con un tablero Kanban estructurado en las siguientes columnas:</p>
+        <div style="display: table; width: 100%; border: 1px solid #eee;">
+            <div style="display: table-cell; padding: 10px; border-right: 1px solid #eee;"><strong>Backlog</strong></div>
+            <div style="display: table-cell; padding: 10px; border-right: 1px solid #eee;"><strong>To Do</strong></div>
+            <div style="display: table-cell; padding: 10px; border-right: 1px solid #eee;"><strong>In Progress</strong></div>
+            <div style="display: table-cell; padding: 10px;"><strong>Done</strong></div>
+        </div>
+
+        <h2>6. Documentación Técnica</h2>
+        <p>La documentación técnica completa, incluyendo el análisis de arquitectura de FreeCAD (OpenCASCADE, Coin3D, Qt) y los diagramas de clases de los módulos BIM modificados, se encuentra en proceso de elaboración y se publicará en esta misma sección al finalizar el Hito 2.</p>
+    </div>
 </body>
 </html>
